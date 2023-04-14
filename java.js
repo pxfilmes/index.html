@@ -34,11 +34,6 @@ if (ex15.includes("15")){
     card15.style.display='none';
 }
 
-setTimeout(function(){
-	alert('oi');
-        ModoProF();
-    },2000);
-
 if (modoPro=="/filmes/pro/"){
     if (valueBTN==5){
         mais15dias();
@@ -55,6 +50,11 @@ if (modoPro=="/filmes/pro/"){
    }
 
 window.onload = function () {
+	
+	setTimeout(function(){
+	alert('oi');
+        ModoProF();
+    },2000);
 	var BotaoAdd = document.querySelector('.listaFilmes__botao');
     if (verificador==2){
         var navaAdd = "https://go.ppoxa.com/?n=";
