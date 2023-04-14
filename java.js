@@ -30,6 +30,7 @@ var sms ="Oi%20vocÃª%20gosta%20de%20assistir%20filmes%20e%20sÃ©ries%20grÃ¡
 var BotaoAdd = document.querySelector('.listaFilmes__botao');
 
 if (modoPro=="/filmes/pro/"){
+	console.log("modo pro none")
 	    card15.style.display='none';
 }
 
@@ -49,7 +50,7 @@ if (modoPro=="/filmes/pro/"){
    }
 
 if (1==1) {
-	//alert('oi url 1');
+	console.log('oi url 1');
         ModoProF();
 }
 
