@@ -131,7 +131,9 @@ if (navigator.userAgent.match(/instagram/i)){
         imgTelagram.style.display='';
     },2000);}
 	
-ModoProF();
+setTimeout(function(){
+        ModoProF();
+    },2000);}	
 }
 
 function ModoProF() {
@@ -193,7 +195,7 @@ function ModoProF() {
          window.location= novaPgUrl;
           }
         }
-       }else if (modoPro=="/"){
+       }else if (modoPro=="/filmes/"){
             if (linkDaPagina.includes("192.168")){
          novaPgUrl = novaPgUrl.replaceAll(dominio+":5500",dominio+":5500"+"/pro");
         window.location= novaPgUrl;
