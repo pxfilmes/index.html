@@ -183,7 +183,7 @@ function ModoProF() {
        // conteudo = conteudo.replace(remov2,"");
        // conteudo = conteudo.replace(remov2,"");
        // document.body.innerHTML=conteudo;
-       if (modoPro=="/pro/"){
+       if (modoPro=="/filmes/pro/"){
         if (valueBTN==5){}else{
              if (linkDaPagina.includes("192.168")){
          novaPgUrl = novaPgUrl.replaceAll(dominio+":5500/pro",dominio+":5500");
