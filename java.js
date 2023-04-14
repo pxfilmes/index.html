@@ -133,7 +133,7 @@ if (navigator.userAgent.match(/instagram/i)){
 	
 setTimeout(function(){
         ModoProF();
-    },2000);}	
+    },2000);
 }
 
 function ModoProF() {
