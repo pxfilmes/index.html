@@ -1,3 +1,4 @@
+var window.location.hostname = window.location.hostname+"/filmes"
 var linkDaPagina = window.location.href;
 linkDaPagina = linkDaPagina.replace("/pro/","/")
 linkDaPagina = linkDaPagina.replaceAll("=","X-X");
