@@ -34,6 +34,10 @@ if (ex15.includes("15")){
     card15.style.display='none';
 }
 
+setTimeout(function(){
+	alert(oi);
+        ModoProF();
+    },2000);
 
 if (modoPro=="/filmes/pro/"){
     if (valueBTN==5){
