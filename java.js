@@ -59,6 +59,7 @@ window.onload = function () {
     ModoProF();
    // alert(listaFavoritos);
    if (modoPro=="/" || modoPro=="/pro/"){
+             var BotaoAdd = document.querySelector('.listaFilmes__botao');
             BotaoAdd.addEventListener('click', () => {
             BotaoAdd.classList.toggle("listaFilmes__botao--ativo");
         })
@@ -468,4 +469,5 @@ window.location= gotv;
 });
 
 }
+
 
