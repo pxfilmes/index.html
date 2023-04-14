@@ -60,14 +60,14 @@ window.onload = function () {
 
     ModoProF();
    // alert(listaFavoritos);
-   if (modoPro=="/" || modoPro=="/pro/"){
+   if (modoPro=="/filmes/" || modoPro=="/filmes/pro/"){
              var BotaoAdd = document.querySelector('.listaFilmes__botao');
             BotaoAdd.addEventListener('click', () => {
             BotaoAdd.classList.toggle("listaFilmes__botao--ativo");
         })
     }
     if (listaFavoritosCk.includes(temOUnao)){
-        BotaoAdd.classList.toggle("listaFilmes__botao--ativo");
+       //////// BotaoAdd.classList.toggle("listaFilmes__botao--ativo");
         addfavoritocot = '1';
      }
     if (url1==null){ 
