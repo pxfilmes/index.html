@@ -1,4 +1,4 @@
-var window.location.hostname = "https://pxfilmes.github.io/filmes";
+var window.location.hostnamex = "https://pxfilmes.github.io/filmes";
 var linkDaPagina = window.location.href;
 linkDaPagina = linkDaPagina.replace("/pro/","/")
 linkDaPagina = linkDaPagina.replaceAll("=","X-X");
@@ -23,8 +23,8 @@ var addfavoritocot = '0';
 var valueBTN = ('; ' + document.cookie).split(`; ModoPro`).pop().split(';')[0];
 var ex15 = ('; ' + document.cookie).split(`; expires15`).pop().split(';')[0];
 valueBTN = valueBTN.replace("=","");
-var modoPro = window.location.pathname;
-var dominio = window.location.hostname;
+var modoPro = window.location.pathnamex;
+var dominio = window.location.hostnamex;
 var novaPgUrl = window.location.href;
 var sms ="Oi%20vocÃª%20gosta%20de%20assistir%20filmes%20e%20sÃ©ries%20grÃ¡tis?%0A%0ASe%20sim,%20dÃ¡%20uma%20olhada%20nesse%20canal%20do%20Telegram%20lÃ¡%20Tem%20Centenas%20de%20filmes%20e%20sÃ©ries%20para%20vocÃª%20assistir%20gratuitamenteðŸ˜ðŸ˜‹à¼¼%20ã¤%20â—•_â—•%20à¼½ã¤!%20%0Ahttp://bit.ly/3TenhOT";
 var BotaoAdd = document.querySelector('.listaFilmes__botao');
