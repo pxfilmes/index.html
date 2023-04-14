@@ -29,7 +29,9 @@ var novaPgUrl = window.location.href;
 var sms ="Oi%20vocÃª%20gosta%20de%20assistir%20filmes%20e%20sÃ©ries%20grÃ¡tis?%0A%0ASe%20sim,%20dÃ¡%20uma%20olhada%20nesse%20canal%20do%20Telegram%20lÃ¡%20Tem%20Centenas%20de%20filmes%20e%20sÃ©ries%20para%20vocÃª%20assistir%20gratuitamenteðŸ˜ðŸ˜‹à¼¼%20ã¤%20â—•_â—•%20à¼½ã¤!%20%0Ahttp://bit.ly/3TenhOT";
 var BotaoAdd = document.querySelector('.listaFilmes__botao');
 
-
+if (modoPro=="/filmes/pro/"){
+	    card15.style.display='none';
+}
 
 if (modoPro=="/filmes/pro/"){
     if (valueBTN==5){
@@ -379,7 +381,6 @@ function shorewh() {
 
 function mais15dias(){
 if (document.cookie.indexOf("ModoPro") > 0){
-	    card15.style.display='none';
     if (ex15.includes("15")){
     }else {
         setTimeout(function(){card15.style.display="";},3500);
