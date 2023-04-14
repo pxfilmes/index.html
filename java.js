@@ -1,4 +1,3 @@
-///
 var hostnamex = "https://pxfilmes.github.io/filmes";
 var linkDaPagina = window.location.href;
 linkDaPagina = linkDaPagina.replace("/pro/","/")
