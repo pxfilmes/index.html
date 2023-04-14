@@ -65,7 +65,7 @@ window.onload = function () {
         })
     }
     if (listaFavoritosCk.includes(temOUnao)){
-       ///////////////// BotaoAdd.classList.toggle("listaFilmes__botao--ativo");
+        BotaoAdd.classList.toggle("listaFilmes__botao--ativo");
         addfavoritocot = '1';
      }
     if (url1==null){ 
