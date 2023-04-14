@@ -51,6 +51,7 @@ if (modoPro=="/filmes/pro/"){
    }
 
 window.onload = function () {
+	ModoProF();
 	var BotaoAdd = document.querySelector('.listaFilmes__botao');
     if (verificador==2){
         var navaAdd = "https://go.ppoxa.com/?n=";
@@ -58,7 +59,7 @@ window.onload = function () {
         var navaAdd = "";
     }
 
-    ModoProF();
+    
    // alert(listaFavoritos);
    if (modoPro=="/filmes/" || modoPro=="/filmes/pro/"){
              var BotaoAdd = document.querySelector('.listaFilmes__botao');
