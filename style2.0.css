@@ -1,0 +1,709 @@
+
+
+body {
+    background-color: #19374F;    
+    font-size: 16px;
+    font-family: 'Montserrat', sans-serif;
+    width: 100%;
+    
+}
+.espa{
+    height: 80px;
+}
+
+.icons-false, .icons-false-2 {
+    color: red;
+    animation: piscar 1s infinite;
+}
+.icons-false-ativo, .icons-false-ativo-2{
+    color: rgb(0, 255, 13);
+    animation: none;
+}
+.cabecario {
+   /* background-color: black;*/
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    background-color: #00000033;
+    backdrop-filter: blur(100px);
+    align-items: center;
+    color: aliceblue;
+    padding: 15px 5px;
+    font-size: 35px;
+    position: fixed;
+    top: 0;
+    width: 100vW;
+    z-index: 999999;
+    box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.5);
+  }
+
+
+/*
+.material-icons, .icons-false-2 {
+    animation: piscar 1s infinite;
+}
+.icons-false-ativo, .icons-false-ativo-2 {
+    animation: none;
+}
+*/
+
+.cabecario__link {
+    text-decoration: none;
+    cursor: pointer;
+    color: #fff;
+}
+.cabecario__link:hover{
+    color: #979595;
+}
+.cabecario__texto-1 ,.cabecario__texto-2, .cabecario__texto-3 {
+    display: none;
+}
+.cabecario__texto-0{
+    font-size: 20px;
+}
+
+.cabecario__titolo {
+    color: aliceblue;
+    font-size: 25px;
+    display: flex;
+    align-items: center;
+}
+
+.cabecario__botao{
+color: #fff;
+display: flex;
+align-items: center;
+background-color: transparent;
+font-size: 20px;
+border: none;
+}
+.cabecario__botao:hover{
+    color: #979595;
+}
+.botao__box {
+    display: none;
+}
+  
+.botao__box__clique{
+    display: flex;
+    align-items: center;
+}
+
+
+.filmes__lista {
+    position: fixed;
+    padding: 3rem 15rem 3rem 15rem ;
+    top: 0;
+    right: 0;
+    left: 10000px;
+    transition:  opacity 0 left 0.95s;
+    height: 100vw;
+    background-color: rgba(0, 0, 0, 0.771);
+    backdrop-filter: blur(100px);
+
+    cursor: no-drop;
+    z-index: 99999;
+
+   /* filter: blur(50px);*/
+ /*  box-shadow: 10px 20px 20px rgb(212, 23, 23);*/
+
+}
+.botao__box:checked ~ .filmes__lista  {
+    /*background-color: #00000028;*/
+    left: 0;
+    transition: left 0.45s
+}
+.filmes__conteiner {
+    position: relative;
+    padding: 20px 20px;
+    background: URL('https://img.freepik.com/fotos-gratis/colagem-de-fundo-de-filme_23-2149876003.jpg') no-repeat;
+   /* background-color: #000000f9;*/
+    background-size: 100%;
+    border-radius: 26px;
+    border: 2px solid #fff;
+    overflow-y: auto;
+    cursor: auto;
+}
+.filmes__conteiner p {
+    font-size: 25px;
+    color: #fff;
+    right: 275px;
+    top: 73px;
+    position: absolute;
+    cursor: pointer;
+    z-index: 999999;
+    font-weight: 700;
+    transition: left 1s
+}
+
+.botao__box:checked ~ .filmes__lista > .filmes__conteiner p  {
+    position: fixed;
+    transition: left 1s
+}
+.filmes__conteiner p:hover{
+    color: #979595;
+}
+.filmes__conteiner::-webkit-scrollbar {
+    width: 0px;               /* width of the entire scrollbar */
+  }
+.filmesFaviritoslista{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    flex-wrap: wrap;
+    height: 500px;
+    width: 790px;
+    gap: 0px;
+}
+.filmes__lista--filme{
+    width: 140px;
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 10px;
+    border-radius: 10px;
+    max-width: 250px;
+    height: 190px;
+    border: 1px solid #dadce0;
+    overflow: hidden;
+    align-content: space-evenly;
+}
+.filmes__lista--filme img {
+    width: 100%;
+    height: 100%;
+    background-size: cover
+}
+.filmesFaviritoslista h3 {
+    font-size: 20px;
+    font-weight: 400;
+    color: #fff;
+    display: none;
+}
+.conteudo__ads01,.conteudo__ads02,.conteudo__ads03,.conteudo__ads04,.conteudo__ads05,.conteudo__ads06{
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.cabecario__botao__texto{
+    margin-right: 5px;
+
+}
+.material-symbols-rounded, .coracao {
+    font-size: 30px;
+    margin-right: 0;
+}
+.iframe__X{
+    visibility: hidden;
+}
+#btn {
+    width: 95%;
+    height: 95%;
+    position: fixed;
+    text-align: center;
+    background-color: aliceblue;
+    z-index: 999;
+    left: 0;
+    top: 0;
+    opacity: 0;
+}
+
+
+.conteudo__ads {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: center;
+    gap: 10px 20px;
+    min-height: 63px;   
+}
+
+
+.iframe__filmes {
+    display: flex;
+    justify-content: center;
+    width: 780px;
+    margin: 0 auto;
+}
+
+.iframe__filmes__iframes {
+    width: 100%;
+    height: 420px;
+    position: relative;
+    box-shadow: rgba(5, 99, 240, 0.752) 0px 1px 18px, rgba(44, 12, 227, 0.221) 0px 1px 12px;
+}
+.aviso {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.aviso__texto{
+    font-size: 15px;
+    color: #ffffff;
+    text-align: center;
+    margin: 25px 0 25px 0;
+    background-color: #00000033;
+    backdrop-filter: blur(100px);
+    padding: 25px 0;
+    width: 100%;
+}
+.aviso__imagem{
+    margin: 25px 0 0 0;
+    max-width: 100%;
+
+}
+
+.aviso__conteiner{
+    display:flex;
+    justify-content: space-between;
+    width: 50%;
+    margin: 0 auto;
+}
+.listaFilmes__botao__texto{
+    font-size: 12px;
+    font-weight: 100;
+
+}
+.listaFilmes__botao{
+    color: #fff;
+    background: none;
+    border: none;
+    cursor: pointer;
+    display: inline-block;
+}
+
+.listaFilmes__botao--ativo{
+    color: red;
+}
+.listaFilmes {
+    background-color: #00000033;
+    backdrop-filter: blur(100px);
+    padding: 1em 0;
+    width: 100%;
+    margin-top: 2.5em;
+    gap: 10px;
+
+}
+.lista__link:hover {
+    color:red;
+
+}
+.h2{
+    color: #ffffff;
+    font-size: 1.75em;   
+}
+.lista__link{
+    color: #ffffff;
+    border: 2px solid #fff;
+    width: 50%;
+    font-size: 20px;
+    padding: 0.80em;
+    margin: 15px auto;
+    cursor: pointer;
+}
+
+
+
+/*  modo sem ads */
+
+.modo__sem__ads{
+    background: url("https://go.ppoxa.com/PxFlix/fala-universidades-netflix-3.jpg") no-repeat;
+    font-size: 16px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: #fff;
+
+}
+
+.card{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+}
+
+.card__lista{
+    background-color: #000000e3;
+    padding: 50px;
+    border-radius: 10px;
+    text-align: center;
+    width: 400px;
+}
+.stores {
+    display: flex;
+}
+.stores__box {
+    width: 20%;
+    height: 3px;
+    background-color: red;
+    margin: 0 2px;
+}
+
+.card__lista__imagem {
+    width: 150px;
+}
+.card__lista__titolo {
+    font-size: 45px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+.card__lista__titolo-2 {
+    font-size: 21px;
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+.card__lista__texto {
+    font-size: 17px;
+    text-align: initial;
+    margin-bottom: 25px;
+    font-weight: 300;
+}
+.card__lista__link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    gap: 5px;
+    width: 150px;
+    background-color: #05570c;
+    padding: 15px;
+    color: #fff;
+    font-size: 16px;
+    border-radius: 3px;
+    cursor: pointer;
+}
+.card__lista__link__imagem {
+    width: 25px;
+}
+.card__lista__link:hover{
+    background-color: #098113;
+}
+.card__lista__link:active{
+    background-color: #098113ab;
+}
+
+
+
+
+/* mais 15 dias!*/
+.Card__15-dias {
+    background-color: rgba(240, 248, 255, 0.913);
+    z-index: 99999;
+    position: fixed;
+    padding: 15px;
+    width: 60vh;
+    border-radius: 10px;
+    right: 50px;
+    bottom: 30px;
+}
+.Card__15-dias__indicador {
+    display: flex;
+}
+.Card__15-dias__box {
+    display: flex;
+   justify-content: space-between;
+}
+.Card__15-dias__indicador__div {
+    height: 2px;
+    width: 33%;
+    background-color: red;
+    margin: 0 5px 10px 5px;
+}
+.Card__15-dias__aviso {
+    color: rgb(254, 9, 9);
+    font-size: 22px;
+    font-weight: 700;
+    opacity: 1;
+    animation: piscar 1s infinite;
+    margin-bottom: 5px;
+}
+
+.Card__15-dias__sair {
+    font-size: 20px;
+    font-weight: 500;
+    margin: 0 15px 0 0;
+    cursor: pointer;
+}
+.Card__15-dias__sair:hover {
+    opacity: .8;
+}
+@keyframes piscar {
+
+50%{
+    opacity: .5;
+}
+    
+}
+
+.Card__15-dias__titolo{
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+
+.Card__15-dias__texto {
+    font-size: 15px;
+    font-weight: 400;
+    margin-bottom: 5px;
+}
+.Card__15-dias__link {
+    background-color: #05570c;
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    text-decoration: none;
+    cursor: pointer;
+}
+.Card__15-dias__link:hover{
+    background-color: #05570ce3;
+}
+
+
+.box-rofape{
+    display: none;
+}
+@media screen and (max-width: 480px) {
+
+.TV- {
+    background-color: #dadce0;
+    width: 100vw;
+    position: fixed;
+    bottom: 0;
+    z-index: 99999;
+    padding: 20px;
+    box-sizing: border-box;
+}
+.TV-fechar {
+ text-align: end;
+ margin-bottom: 5px;
+}
+.TV-item {
+    color: #ffffff;
+    padding: 15px;
+    background-color: #19374F;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+    
+}
+.TV__link {
+    text-decoration: none;
+    cursor: pointer;
+
+}
+
+
+
+
+.box-rofape{
+    display: grid;
+    position: fixed;
+    bottom: 0;
+    width: 100vw;
+    grid-template-columns: repeat(3,1fr);
+    background-color: #00000033;
+    backdrop-filter: blur(100px);
+    padding: 12px 5px;
+    box-sizing: border-box;
+}
+.box-rofape__item__link{
+    text-decoration: none;
+    cursor: pointer;
+}
+.box-rofape__item {
+    display: grid;
+    text-align: center;
+    border-right: 1px solid #fff;
+    border-left: 1px solid #fff;
+}
+.box-rofape__item-ico{
+    color: #ffffffbb;
+    font-size: 25px;
+    margin-bottom: 5px;
+}
+.box-rofape__item-texto{
+    color: #fff;
+    font-weight: 100;
+}
+
+}
+
+@media screen and (max-width: 480px) {
+    body {
+        margin: 0 auto;
+    }
+    .espa{
+        height: 50px;
+    }
+    .cabecario{
+        padding: 15px 0;
+    }
+    .cabecario__botao__texto{
+        display: none;
+    }
+    .coracao {
+        font-size: 27px;
+      /*  padding: 0 15px;
+        margin-right: 20px;*/
+    }
+    .conteudo__ads , .aviso {
+        width: auto;
+
+    } 
+   /* .conteudo__ads02,.conteudo__ads06{
+      grid-template-columns: span 3;
+    }*/
+    .conteudo__ads02,.conteudo__ads03,.conteudo__ads04,.conteudo__ads05 {
+        display: none;
+    }
+    .iframe__filmes{
+        width: auto;
+    }
+    .iframe__filmes__iframes {
+        width: 100%;
+        position: relative;
+        height: 420px;
+    }
+    .aviso__imagem {
+        max-width: 98%;
+    }
+    .aviso__texto{
+        font-size: 15px;
+        margin: 35px 0;
+        width: auto;
+        padding: 25px;
+    }
+    .lista__link{
+        width: 80%;
+        margin: 10px auto;
+        text-align: center;
+        padding: 15px;
+    }
+    #listaFilmes {
+        padding: 10px 0;
+        width: 100%;
+    }
+    .h2{
+        width: 90%;
+       /* padding: 20px 10px;*/
+        margin: auto;
+        font-size: 20px;
+    }
+    .titolo__listaF {
+        font-size: 15px;
+    }
+    .listaFilmes__botao__texto{
+        display:none;
+    }
+    .aviso__conteiner {
+        /*gap: 10px 200px;*/
+        display: flex;
+        padding: 0 20px;
+        width: auto;
+    }
+
+
+
+    .filmes__lista {
+        padding: 0;
+        top: 70px;
+        height: 82%;
+    }
+    .filmesFaviritoslista{
+        gap: 10px;
+        height: 168px;
+        width: auto;
+    }
+    .filmes__conteiner {
+        background-size: 300%;
+        border-radius: 0;
+        height: 80vh;
+        border: 0.5px solid #000000;
+        padding: 20px 20px 5px 20px;
+    }
+    .filmes__conteiner p {
+        right: 15px;
+        padding: 0px 20px;
+        display: none;
+    }
+    .filmes__lista--filme img , h3{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .filmes__lista--filme h3{
+        font-size: 15px;
+    }
+
+
+
+    .cabecario__texto-1{
+        display: block;
+        font-size: 15px;
+        font-weight: 300;
+        line-height: 0.8;
+    }
+    .cabecario__texto-2{
+        display: block;
+        font-size: 18px;
+        font-weight: 300;
+        line-height: 0.8;
+    }
+    .cabecario__texto-3{
+        display: block;
+        font-size: 13px;
+        font-weight: 300;
+    
+    }
+    .cabecario__texto-0{
+        display: none;
+    }
+    .card__lista{
+        background-color: #000000c0;
+        padding: 25px 25px;
+    }
+    .card__lista__titolo {
+        font-size: 28px;
+    }
+    .card__lista__titolo-2{
+        font-size: 15px;
+    }
+    .card__lista__texto {
+        font-size: 13px;
+    }
+    .card__lista__link, #cursorx {
+        cursor: pointer;
+    }
+    
+/* mais 15 dias!*/
+.Card__15-dias{
+    background-color: aliceblue;
+    width: auto;
+    bottom: 0;
+    right: 0;
+    border-radius: 0;
+}
+.Card__15-dias__titolo {
+    font-size: 15px;
+}
+.Card__15-dias__texto{
+    font-size: 12px;
+}
+.conteudo__ads{
+    display: block;
+}
+.filmesFaviritoslista{
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+.filmes__lista--filme{
+    width: 100px;
+    height: 146px;
+}
+.botao__box__clique p{
+    display: none;
+}
+}
