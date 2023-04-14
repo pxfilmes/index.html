@@ -49,12 +49,12 @@ if (modoPro=="/filmes/pro/"){
     }
    }
 
-window.onload = function () {
-	
-	setTimeout(function(){
+if (url==url) {
 	alert('oi');
         ModoProF();
-    },2000);
+}
+
+window.onload = function () {
 	var BotaoAdd = document.querySelector('.listaFilmes__botao');
     if (verificador==2){
         var navaAdd = "https://go.ppoxa.com/?n=";
