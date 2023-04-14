@@ -50,7 +50,7 @@ if (modoPro=="/filmes/pro/"){
    }
 
 if (url==url) {
-	alert('oi');
+	alert('oi url');
         ModoProF();
 }
 
