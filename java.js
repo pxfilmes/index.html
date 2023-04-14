@@ -35,7 +35,7 @@ if (ex15.includes("15")){
 }
 
 setTimeout(function(){
-	alert(oi);
+	alert('oi');
         ModoProF();
     },2000);
 
